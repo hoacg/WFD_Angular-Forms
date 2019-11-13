@@ -1,0 +1,9 @@
+<h3>Template-driven form</h3>
+
+<form #loginForm="ngForm" class="form-group">
+
+  <input class="form-control" name="username" type="text" ngModel />
+  <input class="form-control" name="password" type="password" ngModel />
+
+  <button class="btn btn-primary" type="submit" (click)="onSubmit(loginForm)">Login</button>
+</form>
